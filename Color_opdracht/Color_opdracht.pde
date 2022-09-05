@@ -1,0 +1,10 @@
+background(255,255,255);
+fill(255,0,0);
+size(640, 480);
+text("Hello", 90, 10);
+fill(0,255,0);
+text("I'm", 50, 50);
+fill(255,255,0);
+text("Thomas", 10, 90);
+fill(0,0,255);
+text("v/d Brink", 10, 120);
