@@ -1,5 +1,5 @@
-int[] zesentwintigarray = new int[27];
+int[] Zesentwintigarray = new int[27];
 
 void setup(){
-println(zesentwintigarray);
+println(Zesentwintigarray);
 }
