@@ -1,7 +1,6 @@
-
+int i = 1;
 
 void setup(){
-  background(255);
   size(800,800);
  
 }
@@ -12,7 +11,11 @@ void draw(){
 
 void keyPressed(){
   if (keyCode == 32){
-    println("woohoo");
+    fill(0);
+    i++;
+    background(255);
+    text(i,150,150);
+    textSize(50);
     
     
   }
