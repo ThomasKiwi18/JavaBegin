@@ -8,12 +8,7 @@ long time2 = System.currentTimeMillis();
 void setup(){  
   size (850,850);  
   background (255,0,0);  
-  for( int index = 0; index < randomizer.length; index++){
-    randomizer[index] = (int) (Math.random()*200);
-  }
-    for( int index = 0; index < randomizer.length; index++){
-    seconden = randomizer[index];
-  }
+  randomizerreset();
 }  
   
 void draw(){  
@@ -47,26 +42,14 @@ if(seconden > 0 && seconden <= 250){
   textSize(40); 
   fill(0,125,125);  
   text("Te vroeg, druk om opnieuw te proberen", 10,250,20);  
-       for( int index = 0; index < randomizer.length; index++){
-    randomizer[index] = (int) (Math.random()*200);
-  }
-    for( int index = 0; index < randomizer.length; index++){
-    seconden = randomizer[index]; 
-  seconden2 =0; 
-}
+randomizerreset();
 }
  if(seconden >= 478){  
   background (0,0,255);  
   textSize(40); 
   fill(0,125,125);  
   text("Te laat, druk om opnieuw te proberen", 10,250,20);
-     for( int index = 0; index < randomizer.length; index++){
-    randomizer[index] = (int) (Math.random()*200);
-  }
-    for( int index = 0; index < randomizer.length; index++){
-    seconden = randomizer[index]; 
-  seconden2 =0; 
- }
+randomizerreset();
  }
 if(seconden > 250 && seconden < 478){
   background (0,255,0); 
@@ -87,12 +70,16 @@ if(seconden > 250 && seconden < 478){
   text("20-50 = Ok",100,700,200); 
   text("50-100 = Slecht",100,750,200); 
   text("100-477 = Je hebt niet opgelet",100,800,200); 
-       for( int index = 0; index < randomizer.length; index++){
+  randomizerreset();
+    }
+  } 
+  void randomizerreset(){
+    for( int index = 0; index < randomizer.length; index++){
     randomizer[index] = (int) (Math.random()*200);
   }
     for( int index = 0; index < randomizer.length; index++){
     seconden = randomizer[index]; 
   seconden2 =0; 
-    }
-  } 
-  }   
+  }
+  }
+   
